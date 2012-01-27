@@ -1,0 +1,16 @@
+!!!
+%html
+	%head
+		%title Rotz Standard Seite / haml
+		%meta{"name" => "viewport", "content" => "width=device-width, initial-scale=1.0"}
+		%link{"rel" => "stylesheet", "href" => "assets/style/css/style.css"}
+	%body
+	.container
+		.row.main
+			%section.cola.span2
+				.wrap
+			%section.colb.span4
+				.wrap
+			%section.colc.span6
+				.wrap
+			.row.footer
