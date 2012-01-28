@@ -1,5 +1,15 @@
-.cola img,
 .colb img,
 .colc img
 	max-width: 100%
+	margin-left: -$gridgutterwidth/2 
 	height: auto
+
+.cola img
+	max-width: 100%
+	height: auto
+	
+.colb img
+	max-width: ($colbspan * $gridcolumnwidth) + ($colbspan * $gridgutterwidth)
+	
+.colc img
+	max-width: ($colcspan * $gridcolumnwidth) + ($colcspan * $gridgutterwidth)
