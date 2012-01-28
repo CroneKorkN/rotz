@@ -1,6 +1,11 @@
 // space to top so the mainnav's got room
 .container
 	margin-top: 2 * $baseline
+	
+// logo
+.logo h1
+	line-height: 0
+	margin: 0
 
 // mainnav formatting
 nav.mainnav
@@ -33,7 +38,7 @@ nav.mainnav ul li a
 	color: $buttoncolour
 	@include border-radius(5px)
 	&:hover
-		background: $rotz2
+		background: darken($rotz2, 5%)
 		text-decoration: none
 		
 		
@@ -50,6 +55,34 @@ nav.mainnav ul li a
 	@include opacity(95)
 	&:hover
 		color: $buttoncolourhover
-		text-shadow: 0px 0px 5px darken($linkgradient2, 10%)
+		text-shadow: 0px 2px 5px darken($linkgradient2, 10%)
 		text-decoration: none
 		@include opacity(100)
+		
+		
+// backgrounds for background wrappers
+.bgwrap
+	position: fixed
+	width: 100%
+	height: 100%
+	left: 0
+	right: 0
+	bottom: 0
+	top: 0
+	z-index: $bglayer
+
+.colabg
+	width: ($gridcolumnwidth * 3) + ($gridgutterwidth * 3.5)
+	left: 0
+	background: $rotz1
+
+.colbbg
+	width: ($gridcolumnwidth * 7) + ($gridgutterwidth * 7.5)
+	left: 0
+	z-index: $bglayer - 5
+	background: darken($rotz1, 30%)
+	
+.colcbg
+	width: ($gridcolumnwidth * 12) + ($gridgutterwidth * 12.5)
+	z-index: $bglayer - 15
+	background: darken($rotz1, 50%)
