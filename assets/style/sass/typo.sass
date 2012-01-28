@@ -1,0 +1,42 @@
+body
+	margin: 0
+	color: $basefontcolour
+	line-height: $baseline
+	font-size: $basefontsize
+	font-family: 'droid sans',sans-serif
+
+// basic formatting
+p
+	margin: 0 0 $baseline 0
+
+// links & buttons formatting
+a
+	color: $linkcolour
+	text-decoration: none
+	line-height: inherit
+	font-weight: inherit
+	&:hover
+		color: $linkcolourhover
+		text-decoration: underline
+
+// headlines
+h1, h2, h3, h4, h5, h6
+	font-weight: $hfontweight
+	color: $hfontcolour
+
+h1
+	font-size: $basefontsize * 3.5
+	line-height: $baseline * 3
+	margin: (2 * $baseline) 0 $baseline 0
+	letter-spacing: -.04em
+
+h2
+	font-size: $basefontsize * 2.5
+	line-height: $baseline * 2
+	margin: (2 * $baseline) 0 $baseline 0
+	letter-spacing: -.03em
+h3
+	font-size: $basefontsize * 1.5
+	line-height: $baseline
+	margin: (2 * $baseline) 0 $baseline 0
+	letter-spacing: -.01em

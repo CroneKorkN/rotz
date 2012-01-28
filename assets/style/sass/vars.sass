@@ -1,23 +1,27 @@
-// Colours
+// Colour palette
 $rotz1:							#EAEAEA
 $rotz2:							#222222
 $rotz3:							#086C9C
 $rotz4:							#FF3500
-$rotz5:							#444444
+$rotz5:							#555555
 
-$bgcolour:					#EAEAEA
+// mapping to function-related colour variables
+$bgcolour:					$rotz1
 $basefontcolour:		$rotz5
-$linkcolour:				$rotz2
-$linkcolourhover:		$rotz3
+$linkcolour:				$rotz3
+$linkcolourhover:		darken($rotz3, 10%)
 
-// Baseline grid
-$basefont:          14px
-$baseline:          20px
+// typography & baseline
+$basefontsize:      15px
+$baseline:          21px
+$hfontweight:				bold
+$hfontcolour:				$rotz2
+
 
 // Griditude
 // Modify the grid styles in mixins.scss
-$gridcolumns:       16
-$gridcolumnwidth:   40px
+$gridcolumns:       12
+$gridcolumnwidth:   60px
 $gridgutterwidth:   20px
 $extraspace:        ($gridgutterwidth * 2)
 // For our grid calculations
