@@ -1,0 +1,116 @@
+// Clearfix for clearing floats like a boss h5bp.com/q
+@mixin clearfix
+	zoom: 1
+	&:before,
+	&:after
+		display: table
+		content: ""
+		zoom: 1
+	&:after
+		clear: both
+
+.clearfix
+	@include clearfix
+
+// Center-align a block level element
+@mixin center-block
+	display: block
+	margin-left: auto
+	margin-right: auto
+
+// Sizing shortcuts
+@mixin size($height: 5px, $width: 5px)
+	height: $height
+	width: $width
+
+@mixin square($size: 5px)
+	@include size($size, $size)
+
+
+@mixin columns($columnspan: 1)
+	width: ($gridcolumnwidth * $columnspan) + ($gridgutterwidth * ($columnspan - 1))
+
+@mixin offset($columnoffset: 1)
+	margin-left: ($gridcolumnWidth * $columnoffset) + ($gridgutterwidth * ($columnoffset - 1)) + $extraspace
+
+// Necessary grid styles for every column to make them appear next to each other horizontally
+@mixin gridcolumn()
+	display: inline
+	float: left
+	margin-left: $gridgutterwidth
+
+// makeColumn can be used to mark any element (e.g., .content-primary) as a column without changing markup to .span something
+@mixin makecolumn($columnspan: 1)
+	@include gridcolumn()
+	@include columns($columnspan)
+
+
+// Border Radius
+@mixin border-radius($radius: 5px)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	border-radius: $radius
+
+// Drop shadows
+@mixin box-shadow($shadow: 0 1px 3px rgba(0,0,0,.25))
+	-webkit-box-shadow: $shadow
+	-moz-box-shadow: $shadow
+	box-shadow: $shadow
+
+// Gradients
+@mixin horizontal-gradient ($startcolour: #555, $endcolour: #333)
+	background-colour: $endcolour
+	background-repeat: repeat-x
+	background-image: -khtml-gradient(linear, left top, right top, from($startcolour), to($endcolour))	// Konqueror
+	background-image: -moz-linear-gradient(left, $startcolour, $endcolour) // FF 3.6+
+	background-image: -ms-linear-gradient(left, $startcolour, $endcolour) // IE10
+	background-image: -webkit-gradient(linear, left top, right top, colour-stop(0%, $startcolour), colour-stop(100%, $endcolour)) // Safari 4+, Chrome 2+
+	background-image: -webkit-linear-gradient(left, $startcolour, $endcolour) // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(left, $startcolour, $endcolour) // Opera 11.10
+	background-image: linear-gradient(left, $startcolour, $endcolour) // Le standard
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolourstr='#{$startcolour}', endcolourstr='#{$endcolour}', GradientType=1) // IE9 and down
+
+
+@mixin vertical-gradient ($startcolour: #555, $endcolour: #333)
+	background-colour: $endcolour
+	background-repeat: repeat-x
+	background-image: -khtml-gradient(linear, left top, left bottom, from($startcolour), to($endcolour)) // Konqueror
+	background-image: -moz-linear-gradient(top, $startcolour, $endcolour) // FF 3.6+
+	background-image: -ms-linear-gradient(top, $startcolour, $endcolour) // IE10
+	background-image: -webkit-gradient(linear, left top, left bottom, colour-stop(0%, $startcolour), colour-stop(100%, $endcolour)) // Safari 4+, Chrome 2+
+	background-image: -webkit-linear-gradient(top, $startcolour, $endcolour) // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(top, $startcolour, $endcolour) // Opera 11.10
+	background-image: linear-gradient(top, $startcolour, $endcolour) // The standard
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolourstr='#{$startcolour}', endcolourstr='#{$endcolour}', GradientType=0) // IE9 and down
+
+
+@mixin directional-gradient ($startcolour: #555, $endcolour: #333, $deg: 45deg)
+	background-colour: $endcolour
+	background-repeat: repeat-x
+	background-image: -moz-linear-gradient($deg, $startcolour, $endcolour) // FF 3.6+
+	background-image: -ms-linear-gradient($deg, $startcolour, $endcolour) // IE10
+	background-image: -webkit-linear-gradient($deg, $startcolour, $endcolour) // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient($deg, $startcolour, $endcolour) // Opera 11.10
+	background-image: linear-gradient($deg, $startcolour, $endcolour) // The standard
+
+@mixin vertical-three-colours-gradient($startcolour: #00b3ee, $midcolour: #7a43b6, $colourStop: 50%, $endcolour: #c3325f)
+	background-colour: $endcolour
+	background-repeat: no-repeat
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startcolour), colour-stop($colourStop, $midcolour), to($endcolour))
+	background-image: -webkit-linear-gradient($startcolour, $midcolour $colourStop, $endcolour)
+	background-image: -moz-linear-gradient($startcolour, $midcolour $colourStop, $endcolour)
+	background-image: -ms-linear-gradient($startcolour, $midcolour $colourStop, $endcolour)
+	background-image: -o-linear-gradient($startcolour, $midcolour $colourStop, $endcolour)
+	background-image: linear-gradient($startcolour, $midcolour $colourStop, $endcolour)
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolourstr='#{$startcolour}', endcolourstr='#{$endcolour}', GradientType=0) // IE9 and down, gets no colour-stop at all the proper fallback
+
+// Reset filters for IE
+@mixin reset-filter()
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
+
+// Opacity
+@mixin opacity($opacity: 100)
+	filter: alpha(opacity=$opacity)
+	-khtml-opacity: $opacity / 100
+	-moz-opacity: $opacity / 100
+	opacity: $opacity / 100

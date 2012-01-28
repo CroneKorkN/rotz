@@ -9,6 +9,11 @@
 		.row.main
 			%section.cola.span2
 				.wrap
+					.block.logo
+						%h1
+							%a{:href => "/", :title => "Revolt.fm"}
+								%img{:src => "assets/img/logo.png", :alt => "Revolt.fm"}
+							
 			%section.colb.span4
 				.wrap
 			%section.colc.span6
