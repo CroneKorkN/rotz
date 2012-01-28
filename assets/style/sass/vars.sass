@@ -12,23 +12,6 @@ $basefontcolournegative:	$bgcolour
 $linkcolour:				$rotz3
 $linkcolourhover:		darken($rotz3, 10%)
 
-// mapping to background mixins
-@mixin bgbg
-	@include horizontal-gradient(darken($bgcolour, 10%), lighten($bgcolour, 50%))
-	
-@mixin colabg
-	@include horizontal-gradient(darken($bgcolour, 10%), darken($bgcolour, 50%))
-	@include opacity(50)
-	border-right: 1px solid darken($bgcolour, 20%)
-	
-@mixin colbbg
-	background: darken($bgcolour, 90%)
-	border-right: 1px solid darken($bgcolour, 20%)
-	padding-right: 1px
-	
-@mixin colcbg
-	@include horizontal-gradient(darken($bgcolour, 40%), darken($bgcolour, 60%))
-
 // gradient colours
 $linkgradient1:			lighten($rotz3, 15%)
 $linkgradient2:			$rotz3

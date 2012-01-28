@@ -106,3 +106,21 @@
 	-khtml-opacity: $opacity / 100
 	-moz-opacity: $opacity / 100
 	opacity: $opacity / 100
+
+
+// mapping to background mixins
+@mixin bgbg
+	@include horizontal-gradient(darken($bgcolour, 10%), lighten($bgcolour, 50%))
+	
+@mixin colabg
+	@include horizontal-gradient(darken($bgcolour, 10%), darken($bgcolour, 50%))
+	@include opacity(50)
+	border-right: 1px solid darken($bgcolour, 20%)
+	
+@mixin colbbg
+	background: darken($bgcolour, 90%)
+	border-right: 1px solid darken($bgcolour, 20%)
+	padding-right: 1px
+	
+@mixin colcbg
+	@include horizontal-gradient(darken($bgcolour, 40%), darken($bgcolour, 60%))
