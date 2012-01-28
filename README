@@ -1,1 +1,3 @@
 # This is the working-dev repository for the Revolt.fm page structure and design, codenamed »rotz«
+
+# This branch utilises SASS and HAML as metalanguages for CSS3 and HTML5 respectively.
