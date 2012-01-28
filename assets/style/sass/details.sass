@@ -11,7 +11,7 @@ nav.mainnav
 	right: 0
 	width: 100%
 	z-index: 99999
-	height: 2 * $baseline
+	height: $baseline
 	background: $rotz2
 	margin-left: -($baseline/4)
 	border-bottom: 1px solid lighten($rotz2, 85%)
@@ -24,16 +24,29 @@ nav.mainnav
 nav.mainnav ul li
 	display: inline
 	float: left
-	margin: ($baseline/2) ($baseline/2) ($baseline/2) 0
+	margin: ($baseline/3) ($baseline/2) ($baseline/2) 0
 
 nav.mainnav ul li a
 	display: block
 	padding: 0 ($baseline/4)
-	line-height: 1 * $baseline
+	line-height: 1.2 * $baseline
 	color: $rotz1
 	background: $rotz2
-	text-transform: uppercase
 	@include border-radius(5px)
 	&:hover
 		background: darken($rotz2, 10%)
 		text-decoration: none
+		
+		
+// play button
+.play
+	color: 	darken($buttoncolour, 20%)
+	line-height: 2 * $baseline
+	padding: $baseline/2 $baseline
+	@include vertical-gradient($linkgradient1, $linkgradient2)
+	@include border-radius($baseline)
+	
+.play:hover
+	text-shadow: 0px 0px 5px $rotz2
+	color: $buttoncolour
+	text-decoration: none

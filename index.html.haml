@@ -2,6 +2,7 @@
 %html
 	%head
 		%title Rotz Standard Seite / haml
+		%meta{"charset" => "utf8"}
 		%meta{"name" => "viewport", "content" => "width=device-width, initial-scale=1.0"}
 		%link{"rel" => "stylesheet", "href" => "assets/style/css/style.css"}
 	%body
@@ -28,7 +29,8 @@
 								%img{:src => "assets/img/logo_def.png", :alt => "Revolt.fm"}
 							
 			%section.colb.span4
-				.wrap	
+				.wrap
+					%a.play{:href => "#", :title =>"Revolt.fm Webstream anhören"} Stream anhören!
 					%article.node
 						%h3 Lorem Ipsum
 						%p

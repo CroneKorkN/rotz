@@ -5,10 +5,10 @@ Syntax error: Undefined variable: "$gridgutterwidth".
 1: .container
 2: 	margin-left: $gridgutterwidth
 3: 
-4: // Quick floats
-5: .pull-right
-6: 	float: right
-7: .pull-left
+4: .cola,
+5: .colb,
+6: .colc
+7: 	margin-top: $baseline
 
 Backtrace:
 sass/scaffolding.sass:2
@@ -65,4 +65,4 @@ sass/scaffolding.sass:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$gridgutterwidth\".\A         on line 2 of sass/scaffolding.sass\A \A 1: .container\A 2: 	margin-left: $gridgutterwidth\A 3: \A 4: // Quick floats\A 5: .pull-right\A 6: 	float: right\A 7: .pull-left"; }
+  content: "Syntax error: Undefined variable: \"$gridgutterwidth\".\A         on line 2 of sass/scaffolding.sass\A \A 1: .container\A 2: 	margin-left: $gridgutterwidth\A 3: \A 4: .cola,\A 5: .colb,\A 6: .colc\A 7: 	margin-top: $baseline"; }
