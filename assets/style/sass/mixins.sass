@@ -110,17 +110,14 @@
 
 // mapping to background mixins
 @mixin bgbg
-	@include horizontal-gradient(darken($bgcolour, 10%), lighten($bgcolour, 50%))
+	@include horizontal-gradient($rotz2, darken($rotz2, 100%))
 	
 @mixin colabg
-	@include horizontal-gradient(darken($bgcolour, 10%), darken($bgcolour, 50%))
 	@include opacity(50)
-	border-right: 1px solid darken($bgcolour, 20%)
 	
 @mixin colbbg
-	background: darken($bgcolour, 90%)
-	border-right: 1px solid darken($bgcolour, 20%)
+	background: $bgcolour
 	padding-right: 1px
 	
 @mixin colcbg
-	@include horizontal-gradient(darken($bgcolour, 40%), darken($bgcolour, 60%))
+	background: lighten($bgcolour, 20%)
