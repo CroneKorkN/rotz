@@ -9,7 +9,8 @@
 	height: auto
 	
 .colb img
-	max-width: ($colbspan * $gridcolumnwidth) + ($colbspan * $gridgutterwidth)
+	max-width: ($colbspan * $gridcolumnwidth) + ($colbspan * $gridgutterwidth) + 2
 	
 .colc img
-	max-width: ($colcspan * $gridcolumnwidth) + ($colcspan * $gridgutterwidth)
+	margin-left: - ($gridgutterwidth/2 - 2)
+	max-width: ($colcspan * $gridcolumnwidth) + ($colcspan * $gridgutterwidth) - 2
