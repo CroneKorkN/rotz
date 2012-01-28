@@ -1,20 +1,20 @@
 /*
-Syntax error: Undefined mixin 'gridcolumn'.
-        on line 2 of sass/scaffolding.sass, in `gridcolumn'
-        from line 2 of sass/scaffolding.sass
+Syntax error: Undefined variable: "$gridgutterwidth".
+        on line 2 of sass/scaffolding.sass
 
-1: .row > [class*="span"]
-2: 	@include gridcolumn()
+1: .container
+2: 	margin-left: $gridgutterwidth
 3: 
-4: // Default columns
-5: // For option 24-column grid
-6: @for $i from 1 through 24
-7: 	.span#{$i}
+4: // Quick floats
+5: .pull-right
+6: 	float: right
+7: .pull-left
 
 Backtrace:
-sass/scaffolding.sass:2:in `gridcolumn'
 sass/scaffolding.sass:2
-/usr/lib/ruby/1.8/sass/tree/mixin_node.rb:74:in `perform!'
+/usr/lib/ruby/1.8/sass/script/variable.rb:39:in `_perform'
+/usr/lib/ruby/1.8/sass/script/node.rb:61:in `perform'
+/usr/lib/ruby/1.8/sass/tree/prop_node.rb:132:in `perform!'
 /usr/lib/ruby/1.8/sass/tree/node.rb:301:in `_perform'
 /usr/lib/ruby/1.8/sass/tree/node.rb:209:in `perform'
 /usr/lib/ruby/1.8/sass/tree/node.rb:322:in `perform_children'
@@ -65,4 +65,4 @@ sass/scaffolding.sass:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'gridcolumn'.\A         on line 2 of sass/scaffolding.sass, in `gridcolumn'\A         from line 2 of sass/scaffolding.sass\A \A 1: .row > [class*=\"span\"]\A 2: 	@include gridcolumn()\A 3: \A 4: // Default columns\A 5: // For option 24-column grid\A 6: @for $i from 1 through 24\A 7: 	.span#{$i}"; }
+  content: "Syntax error: Undefined variable: \"$gridgutterwidth\".\A         on line 2 of sass/scaffolding.sass\A \A 1: .container\A 2: 	margin-left: $gridgutterwidth\A 3: \A 4: // Quick floats\A 5: .pull-right\A 6: 	float: right\A 7: .pull-left"; }
