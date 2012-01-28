@@ -13,17 +13,25 @@ nav.mainnav
 	z-index: 99999
 	height: 2 * $baseline
 	background: $rotz2
+	margin-left: -($baseline/4)
 	.container
 		margin-top: 0
 	@include box-shadow(0 0px 15px rgba(0,0,0,.2))
-	@include opacity(90)
+	@include opacity(95)
 
 nav.mainnav ul li
 	display: inline
 	float: left
-	margin-right: $baseline
+	margin: ($baseline/2) ($baseline/2) ($baseline/2) 0
 
 nav.mainnav ul li a
 	display: block
-	line-height: 2 * $baseline
+	padding: 0 ($baseline/4)
+	line-height: 1 * $baseline
 	color: $rotz1
+	background: $rotz2
+	text-transform: uppercase
+	@include border-radius(5px)
+	&:hover
+		background: darken($rotz2, 10%)
+		text-decoration: none

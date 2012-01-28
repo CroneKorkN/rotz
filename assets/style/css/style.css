@@ -232,25 +232,35 @@ nav.mainnav {
   z-index: 99999;
   height: 42px;
   background: #222222;
+  margin-left: -5.25px;
   -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
-  filter: alpha(opacity=90);
-  -khtml-opacity: 0.9;
-  -moz-opacity: 0.9;
-  opacity: 0.9; }
+  filter: alpha(opacity=95);
+  -khtml-opacity: 0.95;
+  -moz-opacity: 0.95;
+  opacity: 0.95; }
   nav.mainnav .container {
     margin-top: 0; }
 
 nav.mainnav ul li {
   display: inline;
   float: left;
-  margin-right: 21px; }
+  margin: 10.5px 10.5px 10.5px 0; }
 
 nav.mainnav ul li a {
   display: block;
-  line-height: 42px;
-  color: #eaeaea; }
+  padding: 0 5.25px;
+  line-height: 21px;
+  color: #eaeaea;
+  background: #222222;
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  nav.mainnav ul li a:hover {
+    background: #090909;
+    text-decoration: none; }
 
 @font-face {
   font-family: "droid sans";
