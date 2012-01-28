@@ -71,18 +71,18 @@ nav.mainnav ul li a
 	z-index: $bglayer
 
 .colabg
-	width: ($gridcolumnwidth * 3) + ($gridgutterwidth * 3)
-	left: 0
+	width: ($gridcolumnwidth * $colaspan) + ($gridgutterwidth * $colaspan)
 	@include colabg
 
 .colbbg
-	width: ($gridcolumnwidth * 7) + ($gridgutterwidth * 7)
-	left: 0
+	width: ($gridcolumnwidth * $colbspan) + ($gridgutterwidth * $colbspan)
+	left:	(($gridcolumns - ($colbspan + $colcspan)) * $gridcolumnwidth) + (($gridcolumns - ($colbspan + $colcspan)) * $gridgutterwidth)
 	z-index: $bglayer - 5
 	@include colbbg
 	
 .colcbg
-	width: ($gridcolumnwidth * 12) + ($gridgutterwidth * 12)
+	width: ($gridcolumnwidth * $colcspan) + ($gridgutterwidth * $colcspan)
+	left:	(($gridcolumns - $colcspan) * $gridcolumnwidth) + (($gridcolumns - $colcspan) * $gridgutterwidth)
 	z-index: $bglayer - 15
 	@include colcbg
 

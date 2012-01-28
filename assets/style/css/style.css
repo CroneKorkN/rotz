@@ -141,13 +141,13 @@ nav.mainnav ul li a:hover { background: #151515; text-decoration: none; }
 
 .bgwrap { position: fixed; width: 100%; height: 100%; left: 0; right: 0; bottom: 0; top: 0; z-index: -999; }
 
-.colabg { width: 240px; left: 0; background: #090909; }
+.colabg { width: 240px; background-colour: #6b6b6b; background-repeat: repeat-x; background-image: -khtml-gradient(linear, left top, right top, from(#d1d1d1), to(#6b6b6b)); background-image: -moz-linear-gradient(left, #d1d1d1, #6b6b6b); background-image: -ms-linear-gradient(left, #d1d1d1, #6b6b6b); background-image: -webkit-gradient(linear, left top, right top, colour-stop(0%, #d1d1d1), colour-stop(100%, #6b6b6b)); background-image: -webkit-linear-gradient(left, #d1d1d1, #6b6b6b); background-image: -o-linear-gradient(left, #d1d1d1, #6b6b6b); background-image: linear-gradient(left, #d1d1d1, #6b6b6b); filter: progid:DXImageTransform.Microsoft.gradient(startcolourstr='#d1d1d1', endcolourstr='#6b6b6b', GradientType=1); filter: alpha(opacity=50); -khtml-opacity: 0.5; -moz-opacity: 0.5; opacity: 0.5; border-right: 1px solid #b7b7b7; }
 
-.colbbg { width: 560px; left: 0; z-index: -1004; background: #222222; }
+.colbbg { width: 320px; left: 240px; z-index: -1004; background: #050505; border-right: 1px solid #b7b7b7; padding-right: 1px; }
 
-.colcbg { width: 960px; z-index: -1014; background: #f7f7f7; }
+.colcbg { width: 400px; left: 560px; z-index: -1014; background-colour: #515151; background-repeat: repeat-x; background-image: -khtml-gradient(linear, left top, right top, from(#848484), to(#515151)); background-image: -moz-linear-gradient(left, #848484, #515151); background-image: -ms-linear-gradient(left, #848484, #515151); background-image: -webkit-gradient(linear, left top, right top, colour-stop(0%, #848484), colour-stop(100%, #515151)); background-image: -webkit-linear-gradient(left, #848484, #515151); background-image: -o-linear-gradient(left, #848484, #515151); background-image: linear-gradient(left, #848484, #515151); filter: progid:DXImageTransform.Microsoft.gradient(startcolourstr='#848484', endcolourstr='#515151', GradientType=1); }
 
-.bg { z-index: -1024; background-colour: #eaeaea; background-repeat: repeat-x; background-image: -khtml-gradient(linear, left top, right top, from(#848484), to(#eaeaea)); background-image: -moz-linear-gradient(left, #848484, #eaeaea); background-image: -ms-linear-gradient(left, #848484, #eaeaea); background-image: -webkit-gradient(linear, left top, right top, colour-stop(0%, #848484), colour-stop(100%, #eaeaea)); background-image: -webkit-linear-gradient(left, #848484, #eaeaea); background-image: -o-linear-gradient(left, #848484, #eaeaea); background-image: linear-gradient(left, #848484, #eaeaea); filter: progid:DXImageTransform.Microsoft.gradient(startcolourstr='#848484', endcolourstr='#eaeaea', GradientType=1); }
+.bg { z-index: -1024; background-colour: white; background-repeat: repeat-x; background-image: -khtml-gradient(linear, left top, right top, from(#d1d1d1), to(white)); background-image: -moz-linear-gradient(left, #d1d1d1, white); background-image: -ms-linear-gradient(left, #d1d1d1, white); background-image: -webkit-gradient(linear, left top, right top, colour-stop(0%, #d1d1d1), colour-stop(100%, white)); background-image: -webkit-linear-gradient(left, #d1d1d1, white); background-image: -o-linear-gradient(left, #d1d1d1, white); background-image: linear-gradient(left, #d1d1d1, white); filter: progid:DXImageTransform.Microsoft.gradient(startcolourstr='#d1d1d1', endcolourstr='white', GradientType=1); }
 
 @font-face { font-family: "droid sans"; src: url("../../fonts/DroidSans-webfont.eot"); src: url("../../fonts/DroidSans-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts/DroidSans-webfont.woff") format("woff"), url("../../fonts/DroidSans-webfont.ttf") format("truetype"), url("../../fonts/DroidSans-webfont.svg#DroidSansRegular") format("svg"); font-weight: normal; font-style: normal; }
 
@@ -167,5 +167,7 @@ h1 { font-size: 52.5px; line-height: 63px; margin: 0 0 21px 0; letter-spacing: -
 h2 { font-size: 37.5px; line-height: 42px; margin: 42px 0 21px 0; letter-spacing: -0.03em; }
 
 h3 { font-size: 22.5px; line-height: 21px; margin: 56.7px 0 27.3px 0; letter-spacing: -0.01em; }
+
+.colc { color: #eaeaea; }
 
 .cola img, .colb img, .colc img { max-width: 100%; height: auto; }

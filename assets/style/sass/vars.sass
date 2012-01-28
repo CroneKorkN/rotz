@@ -8,21 +8,26 @@ $rotz5:							#555555
 // mapping to function-related colour variables
 $bgcolour:					$rotz1
 $basefontcolour:		$rotz5
+$basefontcolournegative:	$bgcolour
 $linkcolour:				$rotz3
 $linkcolourhover:		darken($rotz3, 10%)
 
 // mapping to background mixins
 @mixin bgbg
-	@include horizontal-gradient(darken($bgcolour, 40%), $bgcolour)
+	@include horizontal-gradient(darken($bgcolour, 10%), lighten($bgcolour, 50%))
 	
 @mixin colabg
-	background: darken($rotz2, 10%)
+	@include horizontal-gradient(darken($bgcolour, 10%), darken($bgcolour, 50%))
+	@include opacity(50)
+	border-right: 1px solid darken($bgcolour, 20%)
 	
-@mixin	colbbg
-	background: $rotz2
+@mixin colbbg
+	background: darken($bgcolour, 90%)
+	border-right: 1px solid darken($bgcolour, 20%)
+	padding-right: 1px
 	
 @mixin colcbg
-	background: lighten($bgcolour, 5%)
+	@include horizontal-gradient(darken($bgcolour, 40%), darken($bgcolour, 60%))
 
 // gradient colours
 $linkgradient1:			lighten($rotz3, 15%)
@@ -44,6 +49,11 @@ $gridgutterwidth:   50px
 $extraspace:        ($gridgutterwidth * 2)
 // For our grid calculations
 $sitewidth:         ($gridcolumns * $gridcolumnwidth) + ($gridgutterwidth * ($gridcolumns - 1))
+
+// colspans
+$colaspan:					3
+$colbspan:					4
+$colcspan:					5
 
 // layer defintion ($bglayer is default sub-layer)
 $bglayer:						-999
