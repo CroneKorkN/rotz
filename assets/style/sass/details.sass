@@ -1,0 +1,29 @@
+// space to top so the mainnav's got room
+.container
+	margin-top: 2 * $baseline
+
+// mainnav formatting
+nav.mainnav
+	position: fixed
+	display: block
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	z-index: 99999
+	height: 2 * $baseline
+	background: $rotz2
+	.container
+		margin-top: 0
+	@include box-shadow(0 0px 15px rgba(0,0,0,.2))
+	@include opacity(90)
+
+nav.mainnav ul li
+	display: inline
+	float: left
+	margin-right: $baseline
+
+nav.mainnav ul li a
+	display: block
+	line-height: 2 * $baseline
+	color: $rotz1
