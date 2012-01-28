@@ -1,9 +1,23 @@
+@font-face
+	font-family: 'droid sans'
+	src: url('../../fonts/DroidSans-webfont.eot')
+	src: url('../../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/fonts/DroidSans-webfont.woff') format('woff'), url('../../fonts/DroidSans-webfont.ttf') format('truetype'), url('../../fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'droid sans'
+	src: url('../../fonts/DroidSans-Bold-webfont.eot')
+	src: url('../../fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/DroidSans-Bold-webfont.woff') format('woff'), url('../../fonts/DroidSans-Bold-webfont.ttf') format('truetype'), url('../../fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg')
+	font-weight: bold
+	font-style: normal
+
 body
 	margin: 0
 	color: $basefontcolour
 	line-height: $baseline
 	font-size: $basefontsize
-	font-family: 'droid sans',sans-serif
+	@include fontstack
 
 // basic formatting
 p
@@ -23,6 +37,7 @@ a
 h1, h2, h3, h4, h5, h6
 	font-weight: $hfontweight
 	color: $hfontcolour
+	@include fontstack
 
 h1
 	font-size: $basefontsize * 3.5

@@ -1,18 +1,21 @@
 /*
 Syntax error: Undefined variable: "$basefontcolour".
-        on line 3 of sass/typo.sass
+        on line 17 of sass/typo.sass
 
-1: body
-2: 	margin: 0
-3: 	color: $basefontcolour
-4: 	line-height: $baseline
-5: 	font-size: $basefontsize
-6: 	font-family: 'droid sans',sans-serif
-7: 
-8: // basic formatting
+12: 	font-weight: bold
+13: 	font-style: normal
+14: 
+15: body
+16: 	margin: 0
+17: 	color: $basefontcolour
+18: 	line-height: $baseline
+19: 	font-size: $basefontsize
+20: 	@include fontstack
+21: 
+22: // basic formatting
 
 Backtrace:
-sass/typo.sass:3
+sass/typo.sass:17
 /usr/lib/ruby/1.8/sass/script/variable.rb:39:in `_perform'
 /usr/lib/ruby/1.8/sass/script/node.rb:61:in `perform'
 /usr/lib/ruby/1.8/sass/tree/prop_node.rb:132:in `perform!'
@@ -66,4 +69,4 @@ sass/typo.sass:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$basefontcolour\".\A         on line 3 of sass/typo.sass\A \A 1: body\A 2: 	margin: 0\A 3: 	color: $basefontcolour\A 4: 	line-height: $baseline\A 5: 	font-size: $basefontsize\A 6: 	font-family: 'droid sans',sans-serif\A 7: \A 8: // basic formatting"; }
+  content: "Syntax error: Undefined variable: \"$basefontcolour\".\A         on line 17 of sass/typo.sass\A \A 12: 	font-weight: bold\A 13: 	font-style: normal\A 14: \A 15: body\A 16: 	margin: 0\A 17: 	color: $basefontcolour\A 18: 	line-height: $baseline\A 19: 	font-size: $basefontsize\A 20: 	@include fontstack\A 21: \A 22: // basic formatting"; }
