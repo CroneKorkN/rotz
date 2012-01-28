@@ -5,9 +5,20 @@
 		%meta{"name" => "viewport", "content" => "width=device-width, initial-scale=1.0"}
 		%link{"rel" => "stylesheet", "href" => "assets/style/css/style.css"}
 	%body
+	%nav.container
+		%ul.row
+			%li
+				%a{:href => "#"} Index
+			%li
+				%a{:href => "#"} Radio
+			%li
+				%a{:href => "#"} Termine
+			%li
+				%a{:href => "#"} Verein
+				
 	.container
 		.row.main
-			%section.cola.span2
+			%section.cola.span3
 				.wrap
 					%article.block.logo
 						%h1
@@ -15,23 +26,12 @@
 								%img{:src => "assets/img/logo_def.png", :alt => "Revolt.fm"}
 							
 			%section.colb.span4
-				.wrap
-					%section.block.nav
-						%nav
-							%ul
-								%li
-									%a{:href => "#"} Index
-								%li
-									%a{:href => "#"} Radio
-								%li
-									%a{:href => "#"} Termine
-								%li
-									%a{:href => "#"} Verein
+				.wrap	
 					%article.node
-						%h2 Lorem Ipsum
+						%h3 Lorem Ipsum
 						%p
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis orci dui, eu iaculis risus. Vestibulum venenatis rutrum diam sed commodo. Nulla vitae eros sit amet risus consequat lobortis. Proin justo ipsum, interdum a semper ornare, egestas nec lectus. Sed dolor lectus, feugiat eu bibendum non, porta eu neque. Integer ultrices lacus non velit condimentum vel luctus neque aliquet. Nulla facilisi. Nullam malesuada dictum fermentum. Integer eget ligula ligula, eu venenatis urna. Nulla sit amet ipsum metus, sit amet euismod dolor. Suspendisse elementum, metus non sodales accumsan, velit mi varius dolor, at malesuada enim lectus vel erat. Pellentesque egestas tellus eget velit suscipit auctor. Vestibulum luctus dolor est, non accumsan elit. Ut mollis semper dapibus.				
-			%section.colc.span6
+			%section.colc.span5
 				.wrap
 					.view
 						%article.node
