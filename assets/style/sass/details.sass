@@ -14,10 +14,12 @@ nav.mainnav
 	height: 2 * $baseline
 	background: $rotz2
 	margin-left: -($baseline/4)
+	border-bottom: 1px solid lighten($rotz2, 85%)
+	font-size: $smallfontsize
 	.container
 		margin-top: 0
-	@include box-shadow(0 0px 15px rgba(0,0,0,.2))
-	@include opacity(95)
+	@include box-shadow(0 0px (3 * $baseline) rgba(0,0,0,.2))
+	@include opacity(98)
 
 nav.mainnav ul li
 	display: inline

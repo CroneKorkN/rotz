@@ -233,13 +233,15 @@ nav.mainnav {
   height: 42px;
   background: #222222;
   margin-left: -5.25px;
-  -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
-  filter: alpha(opacity=95);
-  -khtml-opacity: 0.95;
-  -moz-opacity: 0.95;
-  opacity: 0.95; }
+  border-bottom: 1px solid #fbfbfb;
+  font-size: 13px;
+  -webkit-box-shadow: 0 0px 63px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0px 63px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 63px rgba(0, 0, 0, 0.2);
+  filter: alpha(opacity=98);
+  -khtml-opacity: 0.98;
+  -moz-opacity: 0.98;
+  opacity: 0.98; }
   nav.mainnav .container {
     margin-top: 0; }
 
