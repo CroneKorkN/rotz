@@ -9,7 +9,7 @@ Syntax error: Undefined variable: "$baseline".
 5: // logo
 6: .logo h1
 7: 	line-height: 0
-8: 	margin: $baseline/2 0 0 0
+8: 	margin: $baseline/5 0 0 0
 
 Backtrace:
 sass/details.sass:3
@@ -68,4 +68,4 @@ sass/details.sass:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$baseline\".\A         on line 3 of sass/details.sass\A \A 1: // space to top so the mainnav's got room\A 2: .container\A 3: 	margin-top: 2 * $baseline\A 4: 	\A 5: // logo\A 6: .logo h1\A 7: 	line-height: 0\A 8: 	margin: $baseline/2 0 0 0"; }
+  content: "Syntax error: Undefined variable: \"$baseline\".\A         on line 3 of sass/details.sass\A \A 1: // space to top so the mainnav's got room\A 2: .container\A 3: 	margin-top: 2 * $baseline\A 4: 	\A 5: // logo\A 6: .logo h1\A 7: 	line-height: 0\A 8: 	margin: $baseline/5 0 0 0"; }

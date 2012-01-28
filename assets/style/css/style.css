@@ -126,7 +126,7 @@ input, select { vertical-align: middle; }
 
 .container { margin-top: 42px; }
 
-.logo h1 { line-height: 0; margin: 10.5px 0 0 0; }
+.logo h1 { line-height: 0; margin: 4.2px 0 0 0; }
 
 nav.mainnav { top: 0; left: 240px; margin: 0; z-index: 99999; height: 33.6px; margin-left: -5.25px; font-size: 14px; }
 nav.mainnav .container { margin-top: 0; }
@@ -168,6 +168,6 @@ h1 { font-size: 52.5px; line-height: 63px; margin: 0 0 21px 0; letter-spacing: -
 
 h2 { font-size: 37.5px; line-height: 42px; margin: 42px 0 21px 0; letter-spacing: -0.03em; }
 
-h3 { font-size: 22.5px; line-height: 21px; margin: 56.7px 0 27.3px 0; letter-spacing: -0.01em; }
+h3 { font-size: 22.5px; line-height: 21px; margin: 50.4px 0 33.6px 0; letter-spacing: -0.01em; }
 
 .cola img, .colb img, .colc img { max-width: 100%; height: auto; }
