@@ -3,7 +3,7 @@ Syntax error: Undefined variable: "$gridgutterwidth".
         on line 2 of sass/scaffolding.sass
 
 1: .container
-2: 	margin-left: $gridgutterwidth
+2: 	margin-left: $gridgutterwidth/2
 3: 
 4: .cola,
 5: .colb,
@@ -13,6 +13,8 @@ Syntax error: Undefined variable: "$gridgutterwidth".
 Backtrace:
 sass/scaffolding.sass:2
 /usr/lib/ruby/1.8/sass/script/variable.rb:39:in `_perform'
+/usr/lib/ruby/1.8/sass/script/node.rb:61:in `perform'
+/usr/lib/ruby/1.8/sass/script/operation.rb:66:in `_perform'
 /usr/lib/ruby/1.8/sass/script/node.rb:61:in `perform'
 /usr/lib/ruby/1.8/sass/tree/prop_node.rb:132:in `perform!'
 /usr/lib/ruby/1.8/sass/tree/node.rb:301:in `_perform'
@@ -65,4 +67,4 @@ sass/scaffolding.sass:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$gridgutterwidth\".\A         on line 2 of sass/scaffolding.sass\A \A 1: .container\A 2: 	margin-left: $gridgutterwidth\A 3: \A 4: .cola,\A 5: .colb,\A 6: .colc\A 7: 	margin-top: $baseline"; }
+  content: "Syntax error: Undefined variable: \"$gridgutterwidth\".\A         on line 2 of sass/scaffolding.sass\A \A 1: .container\A 2: 	margin-left: $gridgutterwidth/2\A 3: \A 4: .cola,\A 5: .colb,\A 6: .colc\A 7: 	margin-top: $baseline"; }

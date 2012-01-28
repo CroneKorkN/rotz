@@ -11,6 +11,19 @@ $basefontcolour:		$rotz5
 $linkcolour:				$rotz3
 $linkcolourhover:		darken($rotz3, 10%)
 
+// mapping to background mixins
+@mixin bgbg
+	@include horizontal-gradient(darken($bgcolour, 40%), $bgcolour)
+	
+@mixin colabg
+	background: darken($rotz2, 10%)
+	
+@mixin	colbbg
+	background: $rotz2
+	
+@mixin colcbg
+	background: lighten($bgcolour, 5%)
+
 // gradient colours
 $linkgradient1:			lighten($rotz3, 15%)
 $linkgradient2:			$rotz3
@@ -24,15 +37,14 @@ $baseline:          21px
 $hfontweight:				bold
 $hfontcolour:				$rotz2
 
-
-// Griditude
-// Modify the grid styles in mixins.scss
+// Grid
 $gridcolumns:       12
-$gridcolumnwidth:   50px
-$gridgutterwidth:   30px
+$gridcolumnwidth:   30px
+$gridgutterwidth:   50px
 $extraspace:        ($gridgutterwidth * 2)
 // For our grid calculations
 $sitewidth:         ($gridcolumns * $gridcolumnwidth) + ($gridgutterwidth * ($gridcolumns - 1))
 
+// layer defintion ($bglayer is default sub-layer)
 $bglayer:						-999
 
