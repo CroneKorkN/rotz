@@ -1,19 +1,21 @@
 /*
 Syntax error: Undefined variable: "$gridgutterwidth".
-        on line 4 of sass/content.sass
+        on line 6 of sass/content.sass
 
-1: .colb img,
-2: .colc img
-3: 	max-width: 100%
-4: 	margin-left: -$gridgutterwidth/2 
-5: 	height: auto
-6: 
-7: .cola img
-8: 	max-width: 100%
-9: 	height: auto
+1: // images to fill up columns
+2: 
+3: .colb img,
+4: .colc img
+5: 	max-width: 100%
+6: 	margin-left: -$gridgutterwidth/2 
+7: 	height: auto
+8: 
+9: .cola img
+10: 	max-width: 100%
+11: 	height: auto
 
 Backtrace:
-sass/content.sass:4
+sass/content.sass:6
 /usr/lib/ruby/1.8/sass/script/variable.rb:39:in `_perform'
 /usr/lib/ruby/1.8/sass/script/node.rb:61:in `perform'
 /usr/lib/ruby/1.8/sass/script/unary_operation.rb:50:in `_perform'
@@ -71,4 +73,4 @@ sass/content.sass:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$gridgutterwidth\".\A         on line 4 of sass/content.sass\A \A 1: .colb img,\A 2: .colc img\A 3: 	max-width: 100%\A 4: 	margin-left: -$gridgutterwidth/2 \A 5: 	height: auto\A 6: \A 7: .cola img\A 8: 	max-width: 100%\A 9: 	height: auto"; }
+  content: "Syntax error: Undefined variable: \"$gridgutterwidth\".\A         on line 6 of sass/content.sass\A \A 1: // images to fill up columns\A 2: \A 3: .colb img,\A 4: .colc img\A 5: 	max-width: 100%\A 6: 	margin-left: -$gridgutterwidth/2 \A 7: 	height: auto\A 8: \A 9: .cola img\A 10: 	max-width: 100%\A 11: 	height: auto"; }

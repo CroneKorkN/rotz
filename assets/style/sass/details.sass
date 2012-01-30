@@ -13,24 +13,23 @@ nav.mainnav
 	left: ($gridcolumnwidth * $colaspan) + ($gridgutterwidth * $colaspan)
 	margin: 0
 	z-index: 99999
-	height: 1.6 * $baseline
+	width: $sitewidth
+	height: 2 * $baseline
 	margin-left: -($baseline/4)
 	font-size: $smallfontsize
+	background: $bgcolour
 	.container
 		margin-top: 0
 
 nav.mainnav ul
-	position: fixed
-	background: $rotz2
 	padding-left: $baseline/3
-	border-bottom: 1px solid lighten($rotz2, 80%)
 	z-index: $toplayer
-	@include box-shadow(0 0px (3 * $baseline) rgba(0,0,0,.2))
+
 
 nav.mainnav ul li
 	display: inline
 	float: left
-	margin: ($baseline/3) ($baseline/2) ($baseline/4) 0
+	margin: ($baseline/2) ($baseline/2) ($baseline/4) 0
 
 nav.mainnav ul li a
 	display: block

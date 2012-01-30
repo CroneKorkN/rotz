@@ -1,3 +1,5 @@
+// images to fill up columns
+
 .colb img,
 .colc img
 	max-width: 100%
@@ -9,8 +11,9 @@
 	height: auto
 	
 .colb img
-	max-width: ($colbspan * $gridcolumnwidth) + ($colbspan * $gridgutterwidth) + 2
+	max-width: ($colbspan * $gridcolumnwidth) + (($colbspan - .5) * $gridgutterwidth) + 2
+	margin-left: 0
 	
 .colc img
-	margin-left: - ($gridgutterwidth/2 - 2)
-	max-width: ($colcspan * $gridcolumnwidth) + ($colcspan * $gridgutterwidth) - 2
+	margin-left: 0
+	max-width: ($colcspan * $gridcolumnwidth) + (($colcspan - .5) * $gridgutterwidth)
