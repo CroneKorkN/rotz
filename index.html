@@ -31,7 +31,7 @@
           <a class='play' href='#' title='Revolt.fm Webstream anhören'>Stream anhören!</a>
           <article class='node'>
             <h3>Lorem Ipsum</h3>
-            <img src='dummycontent/1.jpg'>
+            <img class='blingbling' src='dummycontent/1.jpg'>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis orci dui, eu iaculis risus. Vestibulum venenatis rutrum diam sed commodo. Nulla vitae eros sit amet risus consequat lobortis. Proin justo ipsum, interdum a semper ornare, egestas nec lectus. Sed dolor lectus, feugiat eu bibendum non, porta eu neque. Integer ultrices lacus non velit condimentum vel luctus neque aliquet. Nulla facilisi. Nullam malesuada dictum fermentum. Integer eget ligula ligula, eu venenatis urna. Nulla sit amet ipsum metus, sit amet euismod dolor. Suspendisse elementum, metus non sodales accumsan, velit mi varius dolor, at malesuada enim lectus vel erat. Pellentesque egestas tellus eget velit suscipit auctor. Vestibulum luctus dolor est, non accumsan elit. Ut mollis semper dapibus.
             </p>
@@ -105,4 +105,8 @@
   <div class='bg bgwrap'>
     &nbsp;
   </div>
+  <script src='assets/js/jquery.min.js' type='text/javascript'></script>
+  <script type='text/javascript'>
+    $(document).ready(function(){ $('img.blingbling').each(function() { var imgClass = $(this).attr('class'); $(this).wrap('<span class="image-wrap ' + imgClass + '" style="width: auto; height: auto;"/>'); $(this).removeAttr('class'); }); });
+  </script>
 </html>
