@@ -13,57 +13,40 @@
 		%script{"src" => "assets/js/respond.min.js"}
 	%body				
 	.container
-		.row.main
-			%section.cola.span3
+		.row
+			.meta.span3
 				.wrap
-					%article.block.logo
+					.block.logo
 						%h1
 							%a{:href => "/", :title => "Revolt.fm"}
 								%img{:src => "assets/img/logo_def.png", :alt => "Revolt.fm"}
-							
-			%section.colb.span4
-				.wrap
-					%a.play{:href => "#", :title =>"Revolt.fm Webstream anhören"} Stream anhören!
-					%article.node
-						%h3 Lorem Ipsum
-						%img.blingbling{:src => "dummycontent/1.jpg"}
-						%p
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis orci dui, eu iaculis risus. Vestibulum venenatis rutrum diam sed commodo. Nulla vitae eros sit amet risus consequat lobortis. Proin justo ipsum, interdum a semper ornare, egestas nec lectus. Sed dolor lectus, feugiat eu bibendum non, porta eu neque. Integer ultrices lacus non velit condimentum vel luctus neque aliquet. Nulla facilisi. Nullam malesuada dictum fermentum. Integer eget ligula ligula, eu venenatis urna. Nulla sit amet ipsum metus, sit amet euismod dolor. Suspendisse elementum, metus non sodales accumsan, velit mi varius dolor, at malesuada enim lectus vel erat. Pellentesque egestas tellus eget velit suscipit auctor. Vestibulum luctus dolor est, non accumsan elit. Ut mollis semper dapibus.				
-					%article.node
-						%h2 Lorem Ipsum
-						%p
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis orci dui, eu iaculis risus. Vestibulum venenatis rutrum diam sed commodo. Nulla vitae eros sit amet risus consequat lobortis. Proin justo ipsum, interdum a semper ornare, egestas nec lectus. Sed dolor lectus, feugiat eu bibendum non, porta eu neque. Integer ultrices lacus non velit condimentum vel luctus neque aliquet. Nulla facilisi. Nullam malesuada dictum fermentum. Integer eget ligula ligula, eu venenatis urna. Nulla sit amet ipsum metus, sit amet euismod dolor. Suspendisse elementum, metus non sodales accumsan, velit mi varius dolor, at malesuada enim lectus vel erat. Pellentesque egestas tellus eget velit suscipit auctor. Vestibulum luctus dolor est, non accumsan elit. Ut mollis semper dapibus.
-						%p
-							Duis ac tortor massa. Integer tempor commodo porta. Donec ultricies odio ac nisl luctus eget pulvinar dui pellentesque. Nunc in mattis enim. Vestibulum semper felis cursus turpis congue facilisis non sit amet nulla. Praesent vestibulum hendrerit malesuada. Cras sit amet felis vel libero egestas mattis ultrices eget lorem. Nullam in enim leo. Donec at ligula lacus. Aliquam pharetra ligula id tellus tincidunt fringilla. In ac arcu eros. Cras a dolor risus.
-			%section.colc.span5
-				.wrap
-					.view
-						%article.node
-							%h1 Für Spaß und gegen Alles!
+			.row.main.span9
+				.row.span9.upcomingshows
+					%article.span3
+						%a{"href" => "#"}
+							%img{:src => "dummycontent/1.jpg"}
+					%article.span2
+						%a{"href" => "#"}
+							%img{:src => "dummycontent/1.jpg"}
+					%article.span2
+						%a{"href" => "#"}
+							%img{:src => "dummycontent/1.jpg"}
+					%article.span2
+						%a{"href" => "#"}
+							%img{:src => "dummycontent/1.jpg"}
+				.row.span9.upcomingevents
+					%article.span2
+						%a{"href" => "#"}
 							%img{:src => "dummycontent/2.jpg"}
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis orci dui, eu iaculis risus. Vestibulum venenatis rutrum diam sed commodo. Nulla vitae eros sit amet risus consequat lobortis. Proin justo ipsum, interdum a semper ornare, egestas nec lectus. Sed dolor lectus, feugiat eu bibendum non, porta eu neque. Integer ultrices lacus non velit condimentum vel luctus neque aliquet. Nulla facilisi. Nullam malesuada dictum fermentum. Integer eget ligula ligula, eu venenatis urna. Nulla sit amet ipsum metus, sit amet euismod dolor. Suspendisse elementum, metus non sodales accumsan, velit mi varius dolor, at malesuada enim lectus vel erat. Pellentesque egestas tellus eget velit suscipit auctor. Vestibulum luctus dolor est, non accumsan elit. Ut mollis semper dapibus.
-							%p
-								Duis ac tortor massa. Integer tempor commodo porta. Donec ultricies odio ac nisl luctus eget pulvinar dui pellentesque. Nunc in mattis enim. Vestibulum semper felis cursus turpis congue facilisis non sit amet nulla. Praesent vestibulum hendrerit malesuada. Cras sit amet felis vel libero egestas mattis ultrices eget lorem. Nullam in enim leo. Donec at ligula lacus. Aliquam pharetra ligula id tellus tincidunt fringilla. In ac arcu eros. Cras a dolor risus.
-						%article.node
-							%h3 Lorem Ipsum
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis orci dui, eu iaculis risus. Vestibulum venenatis rutrum diam sed commodo. Nulla vitae eros sit amet risus consequat lobortis. Proin justo ipsum, interdum a semper ornare, egestas nec lectus. Sed dolor lectus, feugiat eu bibendum non, porta eu neque. Integer ultrices lacus non velit condimentum vel luctus neque aliquet. Nulla facilisi. Nullam malesuada dictum fermentum. Integer eget ligula ligula, eu venenatis urna. Nulla sit amet ipsum metus, sit amet euismod dolor. Suspendisse elementum, metus non sodales accumsan, velit mi varius dolor, at malesuada enim lectus vel erat. Pellentesque egestas tellus eget velit suscipit auctor. Vestibulum luctus dolor est, non accumsan elit. Ut mollis semper dapibus.
-							%p
-								Duis ac tortor massa. Integer tempor commodo porta. Donec ultricies odio ac nisl luctus eget pulvinar dui pellentesque. Nunc in mattis enim. Vestibulum semper felis cursus turpis congue facilisis non sit amet nulla. Praesent vestibulum hendrerit malesuada. Cras sit amet felis vel libero egestas mattis ultrices eget lorem. Nullam in enim leo. Donec at ligula lacus. Aliquam pharetra ligula id tellus tincidunt fringilla. In ac arcu eros. Cras a dolor risus.
-						%article.node
-							%h2 Lorem Ipsum
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis orci dui, eu iaculis risus. Vestibulum venenatis rutrum diam sed commodo. Nulla vitae eros sit amet risus consequat lobortis. Proin justo ipsum, interdum a semper ornare, egestas nec lectus. Sed dolor lectus, feugiat eu bibendum non, porta eu neque. Integer ultrices lacus non velit condimentum vel luctus neque aliquet. Nulla facilisi. Nullam malesuada dictum fermentum. Integer eget ligula ligula, eu venenatis urna. Nulla sit amet ipsum metus, sit amet euismod dolor. Suspendisse elementum, metus non sodales accumsan, velit mi varius dolor, at malesuada enim lectus vel erat. Pellentesque egestas tellus eget velit suscipit auctor. Vestibulum luctus dolor est, non accumsan elit. Ut mollis semper dapibus.
-							%p
-								Duis ac tortor massa. Integer tempor commodo porta. Donec ultricies odio ac nisl luctus eget pulvinar dui pellentesque. Nunc in mattis enim. Vestibulum semper felis cursus turpis congue facilisis non sit amet nulla. Praesent vestibulum hendrerit malesuada. Cras sit amet felis vel libero egestas mattis ultrices eget lorem. Nullam in enim leo. Donec at ligula lacus. Aliquam pharetra ligula id tellus tincidunt fringilla. In ac arcu eros. Cras a dolor risus.
-						%article.node
-							%h2 Lorem Ipsum
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis orci dui, eu iaculis risus. Vestibulum venenatis rutrum diam sed commodo. Nulla vitae eros sit amet risus consequat lobortis. Proin justo ipsum, interdum a semper ornare, egestas nec lectus. Sed dolor lectus, feugiat eu bibendum non, porta eu neque. Integer ultrices lacus non velit condimentum vel luctus neque aliquet. Nulla facilisi. Nullam malesuada dictum fermentum. Integer eget ligula ligula, eu venenatis urna. Nulla sit amet ipsum metus, sit amet euismod dolor. Suspendisse elementum, metus non sodales accumsan, velit mi varius dolor, at malesuada enim lectus vel erat. Pellentesque egestas tellus eget velit suscipit auctor. Vestibulum luctus dolor est, non accumsan elit. Ut mollis semper dapibus.
-							%p
-								Duis ac tortor massa. Integer tempor commodo porta. Donec ultricies odio ac nisl luctus eget pulvinar dui pellentesque. Nunc in mattis enim. Vestibulum semper felis cursus turpis congue facilisis non sit amet nulla. Praesent vestibulum hendrerit malesuada. Cras sit amet felis vel libero egestas mattis ultrices eget lorem. Nullam in enim leo. Donec at ligula lacus. Aliquam pharetra ligula id tellus tincidunt fringilla. In ac arcu eros. Cras a dolor risus.
-			.row.footer
+					%article.span2
+						%a{"href" => "#"}
+							%img{:src => "dummycontent/2.jpg"}
+					%article.span2
+						%a{"href" => "#"}
+							%img{:src => "dummycontent/2.jpg"}
+					%article.span2
+						%a{"href" => "#"}
+							%img{:src => "dummycontent/2.jpg"}
 	.colabg.bgwrap
 		&nbsp;
 	.colbbg.bgwrap
