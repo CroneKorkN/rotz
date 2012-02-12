@@ -128,16 +128,16 @@
     .row {
       margin-left: @gridGutterWidth * -1;
       .clearfix();
-			.row {
-				margin-left:0;
-				.row {
-					margin-left:0;
-				}
-			}
     }
     // Find all .span# classes within .row and give them the necessary properties for grid columns (supported by all browsers back to IE7, thanks @dhg)
     [class*="span"] {
       #gridSystem > .gridColumn(@gridGutterWidth);
+			.row {
+				margin-left:-@gridGutterWidth;
+				.row {
+					margin-left:-@gridGutterWidth;
+				}
+			}
     }
     // Default columns
     .span1 { #gridSystem > .columns(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 1); }
@@ -510,5 +510,3 @@
     border-right: @arrowWidth solid @black;
   }
 }
-
-

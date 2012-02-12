@@ -5,18 +5,28 @@
 @rotz4:							#FF3500;
 @rotz5:							#555555;
 
-// mapping to function-related colour variables
-@bgcolour:					@rotz1;
-@baseFontColour:		@rotz5;
-@basefontcolournegative:	@bgcolour;
-@linkcolour:				@rotz3;
-@linkcolourhover:		darken(@rotz3, 10%);
+// Background Gradient Colours
+@rotzHead1:					#3990B9;
+@rotzHead2:					#00547C;
+@rotzMain1:					#222;
+@rotzMain2:					#111;
+@rotzSub1:					#eee;
+@rotzSub2:					#ccc;
 
-// gradient colours
-@linkgradient1:			lighten(@rotz3, 15%);
-@linkgradient2:			@rotz3;
-@buttoncolour:			lighten(@rotz1, 40%);
-@buttoncolourhover:	lighten(@rotz1, 50%);
+// mapping to function-related colour variables
+@bgColour:					@rotz1;
+@baseFontColour:		@rotz5;
+@negativeFontColour:@bgColour;
+@linkColour:				@rotz3;
+@linkColourHover:		darken(@rotz3, 10%);
+
+// ui gradient colours
+@linkGradient1:			lighten(@rotz3, 15%);
+@linkGradient2:			@rotz3;
+@buttonColour:			lighten(@rotz1, 40%);
+@buttonColourHover:	lighten(@rotz1, 50%);
+@playButtonColour1:	darken(@rotzHead1, 10%);
+@playButtonColour2: darken(@rotzHead2, 10%);
 
 @baseFontSize: 15px;
 @baseFontFamily: 'droid sans', sans-serif;
@@ -33,10 +43,7 @@
 
 
 // layer defintion (@bglayer is default sub-layer)
-@bglayer:						-999;
-@toplayer:					999;
+@bottomLayer:				-999;
+@topLayer:					999;
 
-@colaspan:					2;
-@colbspan:					6;
-@colcspan:					4;
 

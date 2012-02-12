@@ -12,49 +12,38 @@
 		%script{"src" => "assets/js/less.min.js"}
 		%script{"src" => "assets/js/respond.min.js"}
 	%body				
-	.container
-		.row
-			.meta.span3
-				.wrap
-					.block.logo
-						%h1
-							%a{:href => "/", :title => "Revolt.fm"}
-								%img{:src => "assets/img/logo_def.png", :alt => "Revolt.fm"}
-			.row.main.span9
-				.row.span9.upcomingshows
-					%article.span3
-						%a{"href" => "#"}
-							%img{:src => "dummycontent/1.jpg"}
-					%article.span2
-						%a{"href" => "#"}
-							%img{:src => "dummycontent/1.jpg"}
-					%article.span2
-						%a{"href" => "#"}
-							%img{:src => "dummycontent/1.jpg"}
-					%article.span2
-						%a{"href" => "#"}
-							%img{:src => "dummycontent/1.jpg"}
-				.row.span9.upcomingevents
-					%article.span2
-						%a{"href" => "#"}
-							%img{:src => "dummycontent/2.jpg"}
-					%article.span2
-						%a{"href" => "#"}
-							%img{:src => "dummycontent/2.jpg"}
-					%article.span2
-						%a{"href" => "#"}
-							%img{:src => "dummycontent/2.jpg"}
-					%article.span2
-						%a{"href" => "#"}
-							%img{:src => "dummycontent/2.jpg"}
-	.colabg.bgwrap
-		&nbsp;
-	.colbbg.bgwrap
-		&nbsp;
-	.colcbg.bgwrap
-		&nbsp;
-	.bg.bgwrap
-		&nbsp;
+		.headwrap
+			.container.head
+				.row
+					.aColumn.span3
+						%a.play{"href" => "#", "title" => "Revolt.fm hören"}
+							Revolt.fm hören
+					.bColumn.span8.offset1
+						bcol hea
+		.mainwrap
+			.container.main
+				.row
+					.aColumn.span3
+						%h1.logo
+							%a{"href" => "/", "title" => "Revolt.fm"}
+								%img{"src" => "assets/img/logo_neg.png"}
+					.bColumn.span8.offset1
+						Suspendisse quis tellus urna, pellentesque venenatis nulla. Maecenas a nulla ut quam commodo eleifend. Phasellus scelerisque ante eu tortor faucibus posuere. Donec vehicula, justo a molestie malesuada, risus nibh laoreet lectus, quis iaculis mauris purus ac diam. Curabitur varius ipsum in justo lobortis ac ultrices lectus bibendum. Etiam tempus tortor eu leo blandit dictum. Suspendisse potenti.
+		.subwrap
+			.container.sub
+				.row
+					.aColumn.span3
+						Revolt.fm ist ein Webradio-Projekt, dass vom Verein für kulturelle Selbstbestimmung betrieben wird.
+					.bColumn.span8.offset1
+						bcol sub
+		.footwrap
+			.container.foot
+				.row
+					.aColumn.span3
+						acol foot
+					.bColumn.span8.offset1
+						bcol foot	
+		
 	%script{"src" => "assets/js/jquery.min.js", "type" => "text/javascript"}
 	%script{"type" => "text/javascript"}
 		$(document).ready(function(){ $('img.blingbling').each(function() { var imgClass = $(this).attr('class'); $(this).wrap('<span class="image-wrap ' + imgClass + '" style="width: auto; height: auto;"/>'); $(this).removeAttr('class'); }); });

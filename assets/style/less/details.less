@@ -7,6 +7,64 @@ html body {margin:0 !important;}
 	height:auto;
 }
 
+// basic layout
+.container {
+	margin: @baseLineHeight 0 0 @gridColumnWidth/2; 
+}
+.head {
+	min-height: 3 * @baseLineHeight;
+	line-height: 3 * @baseLineHeight;
+}
+.main {
+	min-height: 5 * @baseLineHeight;
+}
+.foot {
+	min-height: 5 * @baseLineHeight;
+}
+.sub {
+	min-height: 5 * @baseLineHeight;
+}
+
+.headwrap,
+.mainwrap,
+.subwrap,
+.footwrap {
+	width:100%;
+}
+.main,
+.sub,
+.foot {
+	margin-top:0;
+	padding:@baseLineHeight/2 0;
+}
+
+
+// Gradients & Background Colours
+.headwrap {
+	.gradientBar(@rotzHead1, @rotzHead2);
+	margin-top: -@baseLineHeight;
+	border-bottom:1px solid lighten(@rotzHead2, 5%);
+}
+.mainwrap {
+	.gradientBar(@rotzMain1, @rotzMain2);
+	border-top:1px solid darken(@rotzMain1, 10%)
+}
+.subwrap {
+	.gradientBar(@rotzSub1, @rotzSub2);
+}
+.footwrap {
+	background: @rotz2;
+	color: @negativeFontColour;
+
+}
+
+// stream button
+
+.play {
+	display:block;
+	padding-left:1em;
+	.gradientBar(@playButtonColour1, @playButtonColour2)
+}
 
 
 // now come the bling bling styles
@@ -15,9 +73,6 @@ html body {margin:0 !important;}
 	display: inline-block;
 	max-width: 100%;
 	vertical-align: bottom;
-}
-.cola {
-	
 }
 .image-wrap:after {
 	content: ' ';
