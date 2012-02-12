@@ -47,12 +47,16 @@ html body {margin:0 !important;}
 }
 .mainwrap {
 	.gradientBar(@rotzMain1, @rotzMain2);
-	border-top:1px solid darken(@rotzMain1, 10%)
+	border-top:1px solid darken(@rotzHead2, 10%);
+	border-bottom:1px solid lighten(@rotzMain2, 20%);
 }
 .subwrap {
 	.gradientBar(@rotzSub1, @rotzSub2);
+	border-top:1px solid darken(@rotzMain2, 20%);
+	border-bottom:1px solid lighten(@rotzSub2, 15%);
 }
 .footwrap {
+	border-top:1px solid darken(@rotzSub2, 100%);
 	background: @rotz2;
 	color: @negativeFontColour;
 
